@@ -17,14 +17,14 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Image.asset("assets/images/mouse.png", width: 250, height: 250),
             Text(
               "Welcome back! Let's return to your phonics learning journey.",
-              style: Theme.of(
-                context,
-              ).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+              ),
               textAlign: TextAlign.center,
             ),
             Padding(
@@ -61,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                         backgroundColor: Colors.grey,
                         foregroundColor: Colors.white,
                       ),
-                      child: Text("Login"),
+                      child: Text("Sign In"),
                     ),
                   ),
                 ],
