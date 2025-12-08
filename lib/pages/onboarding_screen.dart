@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:phonics_app/pages/login_page.dart';
 import 'package:phonics_app/pages/signup_page.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -27,7 +28,7 @@ class OnboardingPage extends StatelessWidget {
                 duration: Duration(seconds: 3),
                 begin: Offset(0.5, 0.3),
               ),
-              FadeEffect(duration: Duration(milliseconds: 800))
+              FadeEffect(duration: Duration(milliseconds: 800)),
             ],
             child: Image.asset(
               "assets/images/bee.png",
@@ -71,14 +72,22 @@ class OnboardingPage extends StatelessWidget {
                     foregroundColor: Colors.white,
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> SignupPage()));
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignupPage()),
+                    );
                   },
                   child: Text("Sign up"),
                 ),
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(foregroundColor: Colors.blue),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                  );
+                },
                 child: Text("Sign in"),
               ),
             ],

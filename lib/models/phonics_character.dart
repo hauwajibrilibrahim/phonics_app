@@ -13,6 +13,7 @@ class PhonicsCharacter {
   final String songText;
   final String songAudio;
   final List<PhonicsCharacter> blending;
+  final List<String> revision;
 
   PhonicsCharacter({
     required this.character,
@@ -24,6 +25,7 @@ class PhonicsCharacter {
     required this.listOfWriting,
     required this.songText,
     required this.songAudio,
-     this.blending = const [],
+    this.blending = const [],
+    this.revision = const [],
   });
 }

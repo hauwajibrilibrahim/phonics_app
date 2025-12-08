@@ -1,71 +1,184 @@
-
-// Dummy sounding items
 import 'package:flutter/material.dart';
 import 'package:phonics_app/models/phonics_character.dart';
 import 'package:phonics_app/models/phonics_group.dart';
 import 'package:phonics_app/models/sounding_item.dart';
 import 'package:phonics_app/models/writing_item.dart';
 
-
 final _dummySoundingItems = [
-  SoundingItem(image: "assets/images/sounds/apple.png", audio: "assets/audio/sounds/apple.mp3", name: "Apple"),
-  SoundingItem(image: "assets/images/sounds/ball.png", audio: "assets/audio/sounds/ball.mp3", name: "Ball"),
-  SoundingItem(image: "assets/images/sounds/cat.png", audio: "assets/audio/sounds/cat.mp3", name: "Cat"),
-  SoundingItem(image: "assets/images/sounds/dog.png", audio: "assets/audio/sounds/dog.mp3", name: "Dog"),
-  SoundingItem(image: "assets/images/sounds/egg.png", audio: "assets/audio/sounds/egg.mp3", name: "Egg"),
-  SoundingItem(image: "assets/images/sounds/nest.png", audio: "assets/audio/sounds/nest.mp3", name: "Nest"),
-  SoundingItem(image: "assets/images/sounds/rabbit.png", audio: "assets/audio/sounds/rabbit.mp3", name: "Rabbit"),
-  SoundingItem(image: "assets/images/sounds/monkey.png", audio: "assets/audio/sounds/monkey.mp3", name: "Monkey"),
-  SoundingItem(image: "assets/images/sounds/duck.png", audio: "assets/audio/sounds/duck.mp3", name: "Duck"),
+  SoundingItem(
+    image: "assets/images/snail.png",
+    audio: "assets/audio/snail.mp3",
+    name: "Snail",
+  ),
+  SoundingItem(
+    image: "assets/images/drum.png",
+    audio: "assets/audio/drum.mp3",
+    name: "Drum",
+  ),
+  SoundingItem(
+    image: "assets/images/spider.png",
+    audio: "assets/audio/spider.mp3",
+    name: "Spider",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/apple.png",
+    audio: "assets/audio/sounds/apple.mp3",
+    name: "Apple",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/ball.png",
+    audio: "assets/audio/sounds/ball.mp3",
+    name: "Ball",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/cat.png",
+    audio: "assets/audio/sounds/cat.mp3",
+    name: "Cat",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/dog.png",
+    audio: "assets/audio/sounds/dog.mp3",
+    name: "Dog",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/egg.png",
+    audio: "assets/audio/sounds/egg.mp3",
+    name: "Egg",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/nest.png",
+    audio: "assets/audio/sounds/nest.mp3",
+    name: "Nest",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/rabbit.png",
+    audio: "assets/audio/sounds/rabbit.mp3",
+    name: "Rabbit",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/monkey.png",
+    audio: "assets/audio/sounds/monkey.mp3",
+    name: "Monkey",
+  ),
+  SoundingItem(
+    image: "assets/images/sounds/duck.png",
+    audio: "assets/audio/sounds/duck.mp3",
+    name: "Duck",
+  ),
 ];
 
 // Dummy writing items
 final _dummyWritingItems = [
-  WritingItem(character: "A", sound: "assets/audio/writing/a.mp3", type: WritingType.character),
-  WritingItem(character: "at", sound: "assets/audio/writing/at.mp3", type: WritingType.word),
-  WritingItem(character: "B", sound: "assets/audio/writing/b.mp3", type: WritingType.character),
-  WritingItem(character: "be", sound: "assets/audio/writing/be.mp3", type: WritingType.word),
-  WritingItem(character: "C", sound: "assets/audio/writing/c.mp3", type: WritingType.character),
-  WritingItem(character: "N", sound: "assets/audio/writing/n.mp3", type: WritingType.character),
-  WritingItem(character: "net", sound: "assets/audio/writing/net.mp3", type: WritingType.word),
-  WritingItem(character: "R", sound: "assets/audio/writing/r.mp3", type: WritingType.character),
-  WritingItem(character: "rat", sound: "assets/audio/writing/rat.mp3", type: WritingType.word),
-  WritingItem(character: "M", sound: "assets/audio/writing/m.mp3", type: WritingType.character),
-  WritingItem(character: "mat", sound: "assets/audio/writing/mat.mp3", type: WritingType.word),
-  WritingItem(character: "D", sound: "assets/audio/writing/d.mp3", type: WritingType.character),
-  WritingItem(character: "dad", sound: "assets/audio/writing/dad.mp3", type: WritingType.word),
+  WritingItem(
+    character: "A",
+    sound: "assets/audio/writing/a.mp3",
+    type: WritingType.character,
+  ),
+  WritingItem(
+    character: "at",
+    sound: "assets/audio/writing/at.mp3",
+    type: WritingType.word,
+  ),
+  WritingItem(
+    character: "B",
+    sound: "assets/audio/writing/b.mp3",
+    type: WritingType.character,
+  ),
+  WritingItem(
+    character: "be",
+    sound: "assets/audio/writing/be.mp3",
+    type: WritingType.word,
+  ),
+  WritingItem(
+    character: "C",
+    sound: "assets/audio/writing/c.mp3",
+    type: WritingType.character,
+  ),
+  WritingItem(
+    character: "N",
+    sound: "assets/audio/writing/n.mp3",
+    type: WritingType.character,
+  ),
+  WritingItem(
+    character: "net",
+    sound: "assets/audio/writing/net.mp3",
+    type: WritingType.word,
+  ),
+  WritingItem(
+    character: "R",
+    sound: "assets/audio/writing/r.mp3",
+    type: WritingType.character,
+  ),
+  WritingItem(
+    character: "rat",
+    sound: "assets/audio/writing/rat.mp3",
+    type: WritingType.word,
+  ),
+  WritingItem(
+    character: "M",
+    sound: "assets/audio/writing/m.mp3",
+    type: WritingType.character,
+  ),
+  WritingItem(
+    character: "mat",
+    sound: "assets/audio/writing/mat.mp3",
+    type: WritingType.word,
+  ),
+  WritingItem(
+    character: "D",
+    sound: "assets/audio/writing/d.mp3",
+    type: WritingType.character,
+  ),
+  WritingItem(
+    character: "dad",
+    sound: "assets/audio/writing/dad.mp3",
+    type: WritingType.word,
+  ),
 ];
 
 // Dummy PhonicsCharacters
-final List<PhonicsCharacter> _phonicsCharacters = [
+final List<PhonicsCharacter> phonicsCharacters = [
   PhonicsCharacter(
     character: "s",
     story: "A snake slithers making a soft /s/ sound.",
     actionText: "Weave your hand like a snake.",
     actionImage: "assets/actions/snake.png",
-    soundingItems: [_dummySoundingItems[0], _dummySoundingItems[1], _dummySoundingItems[2]],
+    soundingItems: [
+      _dummySoundingItems[0],
+      _dummySoundingItems[1],
+      _dummySoundingItems[2],
+    ],
     correctSoundingItemIndex: 2,
     listOfWriting: [_dummyWritingItems[0], _dummyWritingItems[1]],
     songText: "S, S, Snake!",
-    songAudio: "assets/audio/s_song.mp3",
+    songAudio: "assets/audio/snake_song_ss.mp3",
   ),
   PhonicsCharacter(
     character: "a",
     story: "Ants march around an apple making the short /a/ sound.",
     actionText: "Say 'a-a-a' like ants marching.",
     actionImage: "assets/actions/ant.png",
-    soundingItems: [_dummySoundingItems[0], _dummySoundingItems[4], _dummySoundingItems[2]],
+    soundingItems: [
+      _dummySoundingItems[0],
+      _dummySoundingItems[4],
+      _dummySoundingItems[2],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[0], _dummyWritingItems[1]],
     songText: "A, A, Apple!",
     songAudio: "assets/audio/a_song.mp3",
+    revision: ["s"],
   ),
   PhonicsCharacter(
     character: "t",
     story: "A tall tower stands making the /t/ sound.",
     actionText: "Tap your chest lightly as you say /t/ /t/ /t/.",
     actionImage: "assets/actions/tap.png",
-    soundingItems: [_dummySoundingItems[1], _dummySoundingItems[3], _dummySoundingItems[2]],
+    soundingItems: [
+      _dummySoundingItems[1],
+      _dummySoundingItems[3],
+      _dummySoundingItems[2],
+    ],
     correctSoundingItemIndex: 1,
     listOfWriting: [_dummyWritingItems[2], _dummyWritingItems[3]],
     songText: "Tap, Tap, Tap!",
@@ -76,7 +189,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "Insects wiggle around making the /i/ sound.",
     actionText: "Pretend to be a shaky insect saying 'i-i-i'.",
     actionImage: "assets/actions/insect.png",
-    soundingItems: [_dummySoundingItems[4], _dummySoundingItems[2], _dummySoundingItems[0]],
+    soundingItems: [
+      _dummySoundingItems[4],
+      _dummySoundingItems[2],
+      _dummySoundingItems[0],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[0], _dummyWritingItems[1]],
     songText: "Inky the mouse ran up the clock, i-i-i...",
@@ -87,7 +204,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "A pop sound is heard as the balloon bursts making the /p/ sound.",
     actionText: "Pretend to pop a balloon with your finger.",
     actionImage: "assets/actions/pop.png",
-    soundingItems: [_dummySoundingItems[3], _dummySoundingItems[1], _dummySoundingItems[2]],
+    soundingItems: [
+      _dummySoundingItems[3],
+      _dummySoundingItems[1],
+      _dummySoundingItems[2],
+    ],
     correctSoundingItemIndex: 1,
     listOfWriting: [_dummyWritingItems[2], _dummyWritingItems[3]],
     songText: "Pop! Pop! Pop!",
@@ -98,7 +219,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "A nose makes the /n/ sound.",
     actionText: "Point to your nose and say 'n-n-n'.",
     actionImage: "assets/actions/nose.png",
-    soundingItems: [_dummySoundingItems[5], _dummySoundingItems[3], _dummySoundingItems[1]],
+    soundingItems: [
+      _dummySoundingItems[5],
+      _dummySoundingItems[3],
+      _dummySoundingItems[1],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[5], _dummyWritingItems[6]],
     songText: "N, N, Nose!",
@@ -110,7 +235,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "A cat with a quick click /ck/ sound.",
     actionText: "Snap your fingers saying /ck/ /ck/.",
     actionImage: "assets/actions/click.png",
-    soundingItems: [_dummySoundingItems[2], _dummySoundingItems[3], _dummySoundingItems[0]],
+    soundingItems: [
+      _dummySoundingItems[2],
+      _dummySoundingItems[3],
+      _dummySoundingItems[0],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[4]],
     songText: "C-K, click click!",
@@ -121,7 +250,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "Eggs make the short /e/ sound.",
     actionText: "Say 'e-e-e' while pointing to an egg.",
     actionImage: "assets/actions/egg.png",
-    soundingItems: [_dummySoundingItems[4], _dummySoundingItems[0], _dummySoundingItems[1]],
+    soundingItems: [
+      _dummySoundingItems[4],
+      _dummySoundingItems[0],
+      _dummySoundingItems[1],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[0], _dummyWritingItems[1]],
     songText: "E, E, Egg!",
@@ -132,7 +265,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "A happy hippo makes the /h/ sound.",
     actionText: "Wave your hands like a hippo while saying 'h-h-h'.",
     actionImage: "assets/actions/hippo.png",
-    soundingItems: [_dummySoundingItems[1], _dummySoundingItems[2], _dummySoundingItems[3]],
+    soundingItems: [
+      _dummySoundingItems[1],
+      _dummySoundingItems[2],
+      _dummySoundingItems[3],
+    ],
     correctSoundingItemIndex: 1,
     listOfWriting: [_dummyWritingItems[2]],
     songText: "H, H, Hippo!",
@@ -143,7 +280,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "A rabbit races making the /r/ sound.",
     actionText: "Run in place saying 'r-r-r'.",
     actionImage: "assets/actions/rabbit.png",
-    soundingItems: [_dummySoundingItems[6], _dummySoundingItems[0], _dummySoundingItems[2]],
+    soundingItems: [
+      _dummySoundingItems[6],
+      _dummySoundingItems[0],
+      _dummySoundingItems[2],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[7], _dummyWritingItems[8]],
     songText: "R, R, Rabbit!",
@@ -154,7 +295,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "A monkey munches making the /m/ sound.",
     actionText: "Rub your tummy saying 'mmm'.",
     actionImage: "assets/actions/monkey.png",
-    soundingItems: [_dummySoundingItems[7], _dummySoundingItems[1], _dummySoundingItems[4]],
+    soundingItems: [
+      _dummySoundingItems[7],
+      _dummySoundingItems[1],
+      _dummySoundingItems[4],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[9], _dummyWritingItems[10]],
     songText: "M, M, Monkey!",
@@ -165,7 +310,11 @@ final List<PhonicsCharacter> _phonicsCharacters = [
     story: "A duck dives making the /d/ sound.",
     actionText: "Dive your hand down saying 'd-d-d'.",
     actionImage: "assets/actions/duck.png",
-    soundingItems: [_dummySoundingItems[8], _dummySoundingItems[3], _dummySoundingItems[2]],
+    soundingItems: [
+      _dummySoundingItems[8],
+      _dummySoundingItems[3],
+      _dummySoundingItems[2],
+    ],
     correctSoundingItemIndex: 0,
     listOfWriting: [_dummyWritingItems[11], _dummyWritingItems[12]],
     songText: "D, D, Duck!",
@@ -177,17 +326,20 @@ final List<PhonicsCharacter> _phonicsCharacters = [
 final List<PhonicsGroup> PHONICS_GROUP = [
   PhonicsGroup(
     id: "1",
-    characters: _phonicsCharacters.where((c) => ["s", "a", "t", "i", "p", "n"].contains(c.character)).toList(),
+    characters: phonicsCharacters
+        .where((c) => ["s", "a", "t", "i", "p", "n"].contains(c.character))
+        .toList(),
     practiceLink: "https://example.com/practice/group1",
-    bgImage: "assets/images/gp-bgimage1.png",
-    color: Colors.redAccent,
+    bgImage: "assets/images/gp-bgimage2.png",
+    color: Colors.orangeAccent,
   ),
   PhonicsGroup(
     id: "2",
-    characters: _phonicsCharacters.where((c) => ["ck", "e", "h", "r", "m", "d"].contains(c.character)).toList(),
+    characters: phonicsCharacters
+        .where((c) => ["ck", "e", "h", "r", "m", "d"].contains(c.character))
+        .toList(),
     practiceLink: "https://example.com/practice/group2",
-    bgImage: "assets/images/gp-bgimage2.png",
-    color: Colors.purple,
+    bgImage: "assets/images/gp-bgimage1.png",
+    color: Colors.green,
   ),
 ];
- 

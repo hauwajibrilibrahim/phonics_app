@@ -4,15 +4,14 @@ import 'package:phonics_app/models/phonics_group.dart';
 import 'package:phonics_app/pages/lesson_item_page.dart';
 
 class GroupItem extends StatefulWidget {
-  const GroupItem({super.key, required this.phonicsGroup,});
+  const GroupItem({super.key, required this.phonicsGroup});
   final PhonicsGroup phonicsGroup;
-  
+
   @override
   State<GroupItem> createState() => _GroupItemState();
 }
 
 class _GroupItemState extends State<GroupItem> {
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -36,7 +35,9 @@ class _GroupItemState extends State<GroupItem> {
                 backgroundColor: widget.phonicsGroup.color,
                 foregroundColor: Colors.white,
               ),
-              child: Text("Practice Group ${widget.phonicsGroup.id} with readers"),
+              child: Text(
+                "Practice Group ${widget.phonicsGroup.id} with readers",
+              ),
             ),
           ),
         ],
@@ -61,8 +62,17 @@ class _GroupItemState extends State<GroupItem> {
         ),
 
         itemBuilder: (context, index) {
+          var phonicCharacter = listOfCharacters[index];
           return InkWell(
-            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LessonItemPage(color: widget.phonicsGroup.color, phonicsCharacter: listOfCharacters[index]))),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => LessonItemPage(
+                  color: widget.phonicsGroup.color,
+                  phonicsCharacter: phonicCharacter,
+                ),
+              ),
+            ),
             child: Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -70,7 +80,7 @@ class _GroupItemState extends State<GroupItem> {
               ),
               child: Center(
                 child: Text(
-                  listOfCharacters[index].character,
+                  phonicCharacter.character,
                   style: TextStyle(
                     fontSize: 32,
                     color: widget.phonicsGroup.color,
