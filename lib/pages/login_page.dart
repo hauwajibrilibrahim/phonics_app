@@ -43,7 +43,10 @@ class _LoginPageState extends State<LoginPage> {
                           onPressed: () {},
                           child: Text(
                             "Forgot Password?",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ),
